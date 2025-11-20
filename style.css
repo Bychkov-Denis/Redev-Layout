@@ -1,0 +1,51 @@
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f2e7;
+  color: #2f542f;
+}
+
+.container {
+  max-width: 1020px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.offer {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #2f542f;
+  border-radius: 5px;
+}
+
+.discount {
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+
+.order {
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #2f542f;
+  outline: none;
+  border: none;
+}
