@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.first {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.first__item {
+  font-size: 25px;
+  background-color: #32b5a4;
+  color: #ffffff;
+  text-align: center;
+  height: 100px;
+}
+
+.second {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 100px 1fr 200px 100px 1fr;
+  gap: 10px;
+}
+
+.second__item {
+  font-size: 25px;
+  background-color: #32b5a4;
+  text-align: center;
+  color: #ffffff;
+}
