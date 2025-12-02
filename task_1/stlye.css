@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 24px;
 }
 
-html,
 body {
   min-height: 150vh;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 24px;
 }
 
 a {
@@ -21,7 +20,8 @@ ul {
 }
 
 .img-container {
-  position: absolute;
+  width: 500px;
+  height: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,8 +29,8 @@ ul {
 }
 
 .img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 
 .img-container::before {
