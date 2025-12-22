@@ -32,6 +32,7 @@ body {
 
 .filters__radio-group {
   margin: 0 0 30.5px 0;
+  border: none;
 }
 
 .filters__radio-options {
@@ -84,6 +85,10 @@ body {
 
 .filters__radio-input:checked + .filters__radio-custom::before {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.filters__checkbox-group {
+  border: none;
 }
 
 .filters__checkbox-text {

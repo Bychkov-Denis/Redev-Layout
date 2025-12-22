@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Task 2</title>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form__wrapper">
+        <h3 class="form__title">
+          будем рады <span class="form__text-italic">вашему</span> отзыву
+        </h3>
+        <div class="form__groups">
+          <div class="form__group">
+            <label class="form__label" for="nameSurname">Имя и Фамилия</label>
+            <input
+              id="nameSurname"
+              class="form__input"
+              type="text"
+              placeholder="Александрa Иванова"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="city">Откуда вы</label>
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Москва"
+              id="city"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="departureDate"
+              >Когда летали (дата)</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              placeholder="10.10.23"
+              id="departureDate"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="destination"
+              >Куда летали (страна и отель)</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Бали, Hanging Gardens "
+              id="destination"
+            />
+          </div>
+        </div>
+        <div class="form_textarea-wrapper">
+          <label class="form__label" for="comment">Напишите отзыв</label>
+          <textarea
+            class="form_textarea"
+            name="comment"
+            id="comment"
+            placeholder="Текст"
+          ></textarea>
+        </div>
+        <button class="form__btn" type="submit">ОТПРАВИТЬ</button>
+      </div>
+    </form>
+  </body>
+</html>
