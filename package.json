@@ -1,0 +1,17 @@
+{
+  "name": "html-lesson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass task_1/scss:task_1/css task_2/scss:task_2/css",
+    "sass:watch": "sass --watch task_1/scss:task_1/css task_2/scss:task_2/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.97.2"
+  }
+}

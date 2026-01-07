@@ -1,0 +1,141 @@
+@use 'mixins';
+@use 'vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+input,
+button {
+  outline: 0;
+  border: none;
+}
+
+input::placeholder {
+  font-family: vars.$font-openSans;
+  font-size: 14px;
+  font-weight: 500;
+  color: #393939;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('./../img/bg-cta.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 10px;
+  @include mixins.flex-center;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: vars.$font-openSans;
+  color: vars.$color-primary;
+  text-align: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: vars.$font-poppins;
+    font-size: vars.$fontSize-h1;
+    font-weight: 600;
+    font-style: italic;
+    line-height: vars.$lineHeight-h1;
+    max-width: 959px;
+
+    @include mixins.media-max(md) {
+      max-width: 692px;
+      font-size: 48px;
+    }
+
+    @include mixins.media-max(sm) {
+      max-width: 305px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  &__text {
+    max-width: 674px;
+    font-size: vars.$fontSize-text;
+    line-height: 32px;
+    font-weight: 500;
+
+    @include mixins.media-max(md) {
+      max-width: 380px;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
+    }
+
+    @include mixins.media-max(sm) {
+      max-width: 305px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__subscribe {
+    max-width: 653px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__subscribe-input {
+    flex: 0 1 527px;
+    padding: 12px;
+
+    @include mixins.media-max(sm) {
+      padding: 16px 12px;
+    }
+  }
+
+  &__subscribe-button {
+    font-family: vars.$font-openSans;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: vars.$color-primary;
+    flex-grow: 1;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #010101;
+    white-space: nowrap;
+
+    @include mixins.media-max(sm) {
+      padding: 16px;
+    }
+  }
+
+  &__subscribe-text {
+  }
+
+  &__subscribe-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

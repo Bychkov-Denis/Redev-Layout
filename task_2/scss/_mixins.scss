@@ -1,0 +1,13 @@
+@use './_vars.scss';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin media-max($size) {
+  @media (max-width: map-get(vars.$breakpoints, $size)) {
+    @content;
+  }
+}
