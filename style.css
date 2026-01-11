@@ -35,9 +35,6 @@ body {
   border-radius: 20px;
   overflow: hidden;
   z-index: 1;
-}
-
-.promo__inner {
   display: flex;
   align-items: center;
   gap: 150px;
@@ -107,12 +104,7 @@ body {
     margin: 0 0 12px 0;
   }
 
-  .promo__text {
-    font-size: 16px;
-  }
-
   .promo__link {
-    font-size: 14px;
     padding: 14px 20px;
   }
 
@@ -128,9 +120,6 @@ body {
   .promo {
     max-width: 900px;
     padding: 60px 100px 60px 60px;
-  }
-
-  .promo__inner {
     gap: 50px;
   }
 
@@ -139,12 +128,7 @@ body {
     margin: 0 0 12px 0;
   }
 
-  .promo__text {
-    font-size: 16px;
-  }
-
   .promo__link {
-    font-size: 14px;
     padding: 14px 18px;
   }
 
@@ -156,19 +140,15 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .promo {
-    max-width: 344px;
     padding: 50px 30px;
-  }
-
-  .promo__inner {
     flex-wrap: wrap;
     gap: 30px;
   }
 
   .promo__content {
-    flex: 0 1 284px;
+    flex: 0 1 100%;
   }
 
   .promo__text {
