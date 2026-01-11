@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f0f0f;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 0 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo {
+  background-color: #c2b4a3;
+  position: relative;
+  padding: 100px 142px 100px 100px;
+  max-width: 1584px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.promo__content {
+  flex: 0 1 1033px;
+}
+
+.promo__title {
+  font-weight: 500;
+  font-size: 58px;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #0f0f0f;
+  margin: 0 0 16px 0;
+}
+
+.promo__text {
+  font-size: 18px;
+  line-height: 150%;
+  color: #1f1f1f;
+}
+
+.promo__link {
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  padding: 18px 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.promo__img-wrapper {
+  width: 623px;
+  height: 623px;
+  position: absolute;
+  right: -70px;
+  bottom: -40px;
+  z-index: -1;
+}
+
+.promo__img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1440px) {
+  .promo {
+    max-width: 1280px;
+    padding: 80px 120px 80px 80px;
+    border-radius: 16px;
+  }
+
+  .promo__content {
+    flex: 0 1 804px;
+  }
+
+  .promo__title {
+    font-size: 48px;
+    margin: 0 0 12px 0;
+  }
+
+  .promo__link {
+    padding: 14px 20px;
+  }
+
+  .promo__img-wrapper {
+    width: 524px;
+    width: 524px;
+    right: -20px;
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .promo {
+    max-width: 900px;
+    padding: 60px 100px 60px 60px;
+    gap: 50px;
+  }
+
+  .promo__title {
+    font-size: 38px;
+    margin: 0 0 12px 0;
+  }
+
+  .promo__link {
+    padding: 14px 18px;
+  }
+
+  .promo__img-wrapper {
+    width: 450px;
+    height: 450px;
+    right: -20px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    padding: 50px 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .promo__content {
+    flex: 0 1 100%;
+  }
+
+  .promo__text {
+    font-size: 14px;
+  }
+
+  .promo__link {
+    flex: 0 1 100%;
+    gap: 2px;
+  }
+
+  .promo__img-wrapper {
+    width: 306px;
+    height: 306px;
+    right: -110px;
+    top: -136px;
+  }
+}
