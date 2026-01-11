@@ -1,0 +1,72 @@
+@use './vars';
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  transition: all 0.2s ease-in;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Alexandria', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: vars.$container-padding;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo__text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.button {
+  padding: 14px 24px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: vars.$color-green;
+  border-radius: 40px;
+  color: vars.$color-black;
+}
+
+.button--icon {
+  padding: 15px 24px;
+  border: 1.5px solid;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.section-label {
+  font-size: 14px;
+  color: vars.$color-green;
+  line-height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border: 1px solid vars.$color-gray3;
+  border-radius: 24px;
+  backdrop-filter: blur(40px);
+}

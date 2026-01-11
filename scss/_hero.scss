@@ -1,0 +1,140 @@
+@use './vars';
+
+.hero {
+  background-color: vars.$color-black;
+
+  &__container {
+    max-width: vars.$container-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  &__left {
+    padding: 0 27px 0 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 688px;
+    gap: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    color: vars.$color-green;
+    $border: 1px;
+    border: solid $border transparent;
+    border-radius: 24px;
+    align-self: flex-start;
+    position: relative;
+    background-clip: padding-box;
+    background: vars.$color-black;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border;
+      border-radius: inherit;
+      background: linear-gradient(102deg, vars.$color-gray2, #b3b3b3);
+      opacity: 0.6;
+    }
+  }
+
+  &__label-icon {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: vars.$color-green;
+  }
+
+  &__label-text {
+    font-size: 14px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 110.00000000000001%;
+    color: vars.$color-white;
+    text-transform: capitalize;
+  }
+
+  &__desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    color: vars.$color-gray1;
+    max-width: 583px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__btn {
+    color: vars.$color-white;
+    gap: 6px;
+  }
+
+  &__btn-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__right {
+    flex: 0 1 512px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__partners {
+    padding: 40px 0;
+    background-color: vars.$color-gray4;
+    color: vars.$color-gray1;
+  }
+
+  &__partners-container {
+    max-width: vars.$container-width;
+  }
+
+  &__partners-text {
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+
+  &__partners-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    flex-wrap: wrap;
+  }
+
+  &__partners-item {
+    flex: 0 0 129px;
+  }
+
+  &__partners-logo {
+  }
+}

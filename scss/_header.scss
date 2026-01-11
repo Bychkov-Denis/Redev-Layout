@@ -1,0 +1,42 @@
+@use './vars';
+
+.header {
+  background-color: vars.$color-black;
+  padding: 24px 0;
+
+  &__container {
+    max-width: vars.$container-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__menu-link {
+    color: vars.$color-gray1;
+
+    &:hover {
+      color: vars.$color-white;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__login {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 24px;
+    color: vars.$color-white;
+  }
+
+  &__cta {
+    padding: 10px 24px;
+  }
+}
