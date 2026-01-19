@@ -1,4 +1,5 @@
 @use './vars';
+@use './mixins';
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -6,10 +7,13 @@
   transition: all 0.2s ease-in;
 }
 
-html,
-body {
+html {
   height: 100%;
+}
+
+body {
   font-family: 'Alexandria', sans-serif;
+  line-height: 100%;
 }
 
 .wrapper {
@@ -24,6 +28,7 @@ body {
 
 .container {
   margin: 0 auto;
+  max-width: vars.$container-width;
   padding: vars.$container-padding;
 }
 
@@ -41,7 +46,8 @@ body {
 
 .button {
   padding: 14px 24px;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +68,7 @@ body {
   font-size: 14px;
   color: vars.$color-green;
   line-height: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 20px;
@@ -70,3 +76,9 @@ body {
   border-radius: 24px;
   backdrop-filter: blur(40px);
 }
+
+// Сделать градиентный бордер у элементов
+// Сделать у секций круг с размытием background: #4A5AEC0F; backdrop-filter: blur(279.79998779296875px)
+// Доделать секцию с фаундерами
+// background: linear-gradient(102deg, vars.$color-gray2, #b3b3b3);
+// opacity: 0.6;

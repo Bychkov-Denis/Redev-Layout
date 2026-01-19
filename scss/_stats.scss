@@ -1,10 +1,14 @@
 @use './vars';
+@use './mixins';
 
 .stats {
   background-color: vars.$color-gray4;
 
+  @include mixins.absolute-overlay {
+    bottom: 31px;
+  }
+
   &__container {
-    max-width: 1200px;
     padding-top: 120px;
     padding-bottom: 120px;
     text-align: center;
