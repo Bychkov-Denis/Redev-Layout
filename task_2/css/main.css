@@ -6,12 +6,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 input,
 button {
   outline: 0;
@@ -25,32 +19,43 @@ input::placeholder {
   color: #393939;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
+.cta {
   background-image: url("./../img/bg-cta.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cta {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
+  padding: 123.5px 0;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .cta {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 767px) {
+  .cta {
+    padding: 72px 0;
+  }
+}
+.cta .container {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .cta .container {
+    max-width: 690px;
+  }
+}
+@media (max-width: 767px) {
+  .cta .container {
+    max-width: 100%;
+    padding: 0 35px;
+  }
+}
 .cta__content {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
+  margin-bottom: 24px;
 }
 .cta__title {
   font-family: "Poppins", sans-serif;
@@ -58,28 +63,30 @@ input::placeholder {
   font-weight: 600;
   font-style: italic;
   line-height: 100%;
-  max-width: 959px;
+  margin-bottom: 8px;
+  color: #ffffff;
 }
-@media (max-width: 834px) {
+@media (max-width: 1024px) {
   .cta__title {
-    max-width: 692px;
     font-size: 48px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .cta__title {
-    max-width: 305px;
     font-size: 30px;
     line-height: 36px;
   }
 }
 .cta__text {
   max-width: 674px;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
+  margin: 0 auto;
+  color: #ffffff;
 }
-@media (max-width: 834px) {
+@media (max-width: 1024px) {
   .cta__text {
     max-width: 380px;
     font-size: 18px;
@@ -87,7 +94,7 @@ input::placeholder {
     font-weight: 400;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .cta__text {
     max-width: 305px;
     font-size: 14px;
@@ -103,9 +110,15 @@ input::placeholder {
 .cta__subscribe-input {
   flex: 0 1 527px;
   padding: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #393939;
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .cta__subscribe-input {
+    font-size: 12px;
+    line-height: 16px;
     padding: 16px 12px;
   }
 }
@@ -123,9 +136,12 @@ input::placeholder {
   padding: 10px 16px;
   background-color: #010101;
   white-space: nowrap;
+  cursor: pointer;
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .cta__subscribe-button {
+    font-size: 14px;
+    line-height: 16px;
     padding: 16px;
   }
 }

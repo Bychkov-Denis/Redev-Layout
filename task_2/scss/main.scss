@@ -10,12 +10,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 input,
 button {
   outline: 0;
@@ -29,30 +23,40 @@ input::placeholder {
   color: #393939;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
+.cta {
   background-image: url('./../img/bg-cta.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 0 10px;
-  @include mixins.flex-center;
-}
-
-.cta {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  font-family: vars.$font-openSans;
-  color: vars.$color-primary;
+  padding: 123.5px 0;
   text-align: center;
 
+  @include mixins.media-max(md) {
+    padding: 50px 0;
+  }
+
+  @include mixins.media-max(sm) {
+    padding: 72px 0;
+  }
+
+  .container {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+
+    @include mixins.media-max(md) {
+      max-width: 690px;
+    }
+
+    @include mixins.media-max(sm) {
+      max-width: 100%;
+      padding: 0 35px;
+    }
+  }
+
   &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+    margin-bottom: 24px;
   }
 
   &__title {
@@ -61,15 +65,14 @@ input::placeholder {
     font-weight: 600;
     font-style: italic;
     line-height: vars.$lineHeight-h1;
-    max-width: 959px;
+    margin-bottom: 8px;
+    color: vars.$color-primary;
 
     @include mixins.media-max(md) {
-      max-width: 692px;
       font-size: 48px;
     }
 
     @include mixins.media-max(sm) {
-      max-width: 305px;
       font-size: 30px;
       line-height: 36px;
     }
@@ -77,9 +80,12 @@ input::placeholder {
 
   &__text {
     max-width: 674px;
+    font-family: vars.$font-openSans;
     font-size: vars.$fontSize-text;
     line-height: 32px;
     font-weight: 500;
+    margin: 0 auto;
+    color: vars.$color-primary;
 
     @include mixins.media-max(md) {
       max-width: 380px;
@@ -105,8 +111,14 @@ input::placeholder {
   &__subscribe-input {
     flex: 0 1 527px;
     padding: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #393939;
 
     @include mixins.media-max(sm) {
+      font-size: 12px;
+      line-height: 16px;
       padding: 16px 12px;
     }
   }
@@ -125,13 +137,13 @@ input::placeholder {
     padding: 10px 16px;
     background-color: #010101;
     white-space: nowrap;
+    cursor: pointer;
 
     @include mixins.media-max(sm) {
+      font-size: 14px;
+      line-height: 16px;
       padding: 16px;
     }
-  }
-
-  &__subscribe-text {
   }
 
   &__subscribe-icon {
