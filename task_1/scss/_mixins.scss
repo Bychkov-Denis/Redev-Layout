@@ -1,0 +1,7 @@
+@use './_variables.scss';
+
+@mixin media-max($size) {
+  @media (max-width: map-get(variables.$breakpoints, $size)) {
+    @content;
+  }
+}
