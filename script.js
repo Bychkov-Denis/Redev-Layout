@@ -17,16 +17,12 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 
-  autoHeight: true,
-
+  slidesPerView: 1,
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    768: {
+    767: {
       slidesPerView: 2,
     },
-    1200: {
+    1024: {
       slidesPerView: 3,
     },
   },
