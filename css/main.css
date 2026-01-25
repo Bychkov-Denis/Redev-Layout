@@ -191,7 +191,7 @@ body.menu-open {
 
 .header {
   background-color: #000000;
-  padding: 24px 0;
+  padding: 20px 0;
   position: relative;
 }
 .header__container {
@@ -485,13 +485,13 @@ body.menu-open {
 .advs {
   background-color: #000000;
   overflow-x: hidden;
-  position: relative;
 }
 .advs::before {
   content: "";
   width: 606px;
   height: 425px;
   display: block;
+  border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -516,6 +516,7 @@ body.menu-open {
   font-size: 48px;
   color: #e5e5e5;
   line-height: 100%;
+  text-transform: capitalize;
 }
 .advs__text {
   font-family: "Inter", sans-serif;
@@ -597,13 +598,13 @@ body.menu-open {
 .stats {
   background-color: #0f0f0f;
   overflow-x: hidden;
-  position: relative;
 }
 .stats::before {
   content: "";
   width: 606px;
   height: 425px;
   display: block;
+  border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -629,6 +630,7 @@ body.menu-open {
   max-width: 704px;
   color: #e5e5e5;
   line-height: 100%;
+  text-transform: capitalize;
 }
 .stats__desc {
   max-width: 644px;
@@ -694,13 +696,13 @@ body.menu-open {
   background-color: #000000;
   backdrop-filter: blur(240px);
   overflow-x: hidden;
-  position: relative;
 }
 .features::before {
   content: "";
   width: 606px;
   height: 425px;
   display: block;
+  border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -725,6 +727,7 @@ body.menu-open {
   font-size: 48px;
   color: #e5e5e5;
   line-height: 100%;
+  text-transform: capitalize;
 }
 .features__text {
   font-family: "Inter", sans-serif;
@@ -835,16 +838,124 @@ body.menu-open {
   }
 }
 
+.testimonial {
+  overflow: hidden;
+  background-color: #0f0f0f;
+  position: relative;
+}
+.testimonial::before {
+  content: "";
+  width: 606px;
+  height: 425px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(74, 90, 236, 0.0588235294);
+  filter: blur(279.799987793px);
+  top: 116px;
+}
+.testimonial__container {
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+.testimonial__content {
+  max-width: 644px;
+  margin: 0 auto 72px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.testimonial__title {
+  font-size: 48px;
+  line-height: 100%;
+  color: #e5e5e5;
+  text-transform: capitalize;
+}
+.testimonial__desc {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #999999;
+}
+.testimonial__list {
+  display: flex;
+  gap: 20px;
+  width: 1552px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.testimonial__list-item {
+  background-color: #000000;
+  flex-basis: 373px;
+  position: relative;
+  border-radius: 16px;
+  padding: 32px;
+}
+.testimonial__list-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background-image: linear-gradient(-102deg, #4d4d4d, #b3b3b3);
+  border-radius: inherit;
+  opacity: 0.6;
+  mask: conic-gradient(#000 0 0) content-box exclude, conic-gradient(#000 0 0);
+}
+.testimonial__list-text {
+  color: #ededf2;
+  margin: 0 0 32px 0;
+}
+.testimonial__list-person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.testimonial__list-img {
+  width: 48px;
+  height: 48px;
+}
+.testimonial__list-name {
+  font-size: 14px;
+  color: #ffffff;
+}
+.testimonial__list-job {
+  font-size: 12px;
+  color: #4d4d4d;
+}
+@media (max-width: 767px) {
+  .testimonial__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .testimonial__content {
+    gap: 16px;
+    margin: 0 auto 32px;
+  }
+  .testimonial__title {
+    font-size: 28px;
+  }
+  .testimonial__desc {
+    font-size: 16px;
+  }
+  .testimonial__list-item {
+    flex: 0 0 343px;
+  }
+}
+
 .faq {
   background-color: #000000;
   overflow-x: hidden;
-  position: relative;
 }
 .faq::before {
   content: "";
   width: 606px;
   height: 425px;
   display: block;
+  border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -938,6 +1049,7 @@ body.menu-open {
   font-size: 48px;
   line-height: 100%;
   color: #e5e5e5;
+  text-transform: capitalize;
 }
 .revolutionary__desc {
   font-family: "Inter", sans-serif;
@@ -969,6 +1081,7 @@ body.menu-open {
   padding-top: 80px;
 }
 .footer__top {
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1053,6 +1166,7 @@ body.menu-open {
   }
   .footer__top {
     gap: 40px;
+    padding: 0;
   }
   .footer__left {
     flex-direction: column;

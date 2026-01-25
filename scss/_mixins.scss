@@ -1,13 +1,12 @@
 @use './vars';
 
 @mixin absolute-overlay {
-  position: relative;
-
   &::before {
     content: '';
     width: 606px;
     height: 425px;
     display: block;
+    border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
