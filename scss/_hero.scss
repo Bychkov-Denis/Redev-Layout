@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding-top: 88px;
     padding-bottom: 88px;
   }
@@ -78,6 +77,8 @@
   &__btn {
     color: vars.$color-white;
     gap: 6px;
+    $border-width: 1.5px;
+    @include mixins.gradient-border($border-width);
   }
 
   &__btn-icon {
@@ -101,7 +102,8 @@
   }
 
   &__partners-container {
-    max-width: vars.$container-width;
+    max-width: 941px;
+    padding: 0;
   }
 
   &__partners-text {
@@ -121,6 +123,75 @@
     flex: 0 0 129px;
   }
 
-  &__partners-logo {
+  @include mixins.media-tablet {
+    &__container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    &__left {
+      flex: 1 1 auto;
+      padding: 0;
+      text-align: center;
+      align-items: center;
+      gap: 32px;
+    }
+
+    &__content {
+    }
+
+    &__label {
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__cta {
+      width: 140px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__btn {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__right {
+      width: 300px;
+      height: 300px;
+      flex: 0 1 300px;
+    }
+  }
+
+  @include mixins.media-mobile {
+    &__partners-text {
+      line-height: 20px;
+      margin: 0 0 32px 0;
+    }
+
+    &__partners-list {
+      column-gap: 20px;
+      row-gap: 16px;
+    }
+
+    &__partners-item {
+      flex: 0 1 97px;
+    }
   }
 }

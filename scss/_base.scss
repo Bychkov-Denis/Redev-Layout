@@ -14,6 +14,12 @@ html {
 body {
   font-family: 'Alexandria', sans-serif;
   line-height: 100%;
+  transition: vars.$transiton;
+  overflow-x: hidden;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -58,10 +64,11 @@ body {
 
 .button--icon {
   padding: 15px 24px;
-  border: 1.5px solid;
+  border: 1.5px;
   background-color: transparent;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .section-label {

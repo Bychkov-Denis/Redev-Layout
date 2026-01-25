@@ -1,4 +1,5 @@
 @use './vars';
+@use './mixins';
 
 .revolutionary {
   background-color: vars.$color-gray4;
@@ -30,5 +31,20 @@
 
   &__link {
     border-radius: 0;
+  }
+
+  @include mixins.media-mobile {
+    &__container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
   }
 }

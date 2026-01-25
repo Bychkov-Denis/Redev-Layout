@@ -31,3 +31,15 @@
       conic-gradient(#000 0 0);
   }
 }
+
+@mixin media-tablet() {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin media-mobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}

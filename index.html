@@ -18,26 +18,31 @@
             />
             <p class="logo__text">NeoFi</p>
           </a>
-          <nav class="header__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Home</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Features</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Testimonial</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">FAQ</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__actions">
-            <a class="header__login" href="#">Log in</a>
-            <a class="header__cta button" href="#">Try For Free</a>
+          <div class="header__right">
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Home</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Features</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Testimonial</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions">
+              <a class="header__login" href="#">Log in</a>
+              <a class="header__cta button" href="#">Try For Free</a>
+            </div>
           </div>
+          <button class="header__menu-btn">
+            <div class="header__menu-icon"></div>
+          </button>
         </div>
       </header>
       <main class="main">
@@ -135,34 +140,34 @@
             <ul class="advs__list">
               <li class="advs__list-item">
                 <img
-                  class="advs__icon"
+                  class="advs__list-icon"
                   src="./icons/scalability-icon.svg"
                   alt="features icon"
                 />
-                <p class="advs__name">Scalability</p>
-                <p class="advs__desc">
+                <p class="advs__list-name">Scalability</p>
+                <p class="advs__list-desc">
                   Adapt and grow, no matter the demand on grow
                 </p>
               </li>
               <li class="advs__list-item">
                 <img
-                  class="advs__icon"
+                  class="advs__list-icon"
                   src="./icons/decentralisation-icon.svg"
                   alt="features icon"
                 />
-                <p class="advs__name">Decentralisation</p>
-                <p class="advs__desc">
+                <p class="advs__list-name">Decentralisation</p>
+                <p class="advs__list-desc">
                   Decentralization. Web3 aims to move away from the centralized
                 </p>
               </li>
               <li class="advs__list-item">
                 <img
-                  class="advs__icon"
+                  class="advs__list-icon"
                   src="./icons/connectivity-icon.svg"
                   alt="features icon"
                 />
-                <p class="advs__name">Connectivity</p>
-                <p class="advs__desc">
+                <p class="advs__list-name">Connectivity</p>
+                <p class="advs__list-desc">
                   computers will be able to understand information similarly to
                   humans
                 </p>
@@ -199,7 +204,7 @@
         </section>
         <section class="features">
           <div class="features__container container">
-            <div class="features_content">
+            <div class="features__content">
               <span class="features__label section-label">Feature</span>
               <h2 class="features__title">
                 the future of blockchain technology
@@ -223,13 +228,13 @@
               <ul class="features__list">
                 <li class="features__list-item">
                   <img
-                    class="features__item-icon"
+                    class="features__list-icon"
                     src="./icons/flow-connection-icon.svg"
                     alt="feature icon"
                   />
-                  <div class="features__item-content">
-                    <p class="features__item-name">Connectivity and ubiquity</p>
-                    <p class="features__item-desc">
+                  <div class="features__list-content">
+                    <p class="features__list-name">Connectivity and ubiquity</p>
+                    <p class="features__list-desc">
                       Connectivity and Ubiquity. The focal points of Web 3.0
                       emphasize connectivity and ubiquity, ensuring seamless
                       interactions between users and devices within
@@ -238,13 +243,13 @@
                 </li>
                 <li class="features__list-item">
                   <img
-                    class="features__item-icon"
+                    class="features__list-icon"
                     src="./icons/security-icon.svg"
                     alt="feature icon"
                   />
-                  <div class="features__item-content">
-                    <p class="features__item-name">Secure Transaction</p>
-                    <p class="features__item-desc">
+                  <div class="features__list-content">
+                    <p class="features__list-name">Secure Transaction</p>
+                    <p class="features__list-desc">
                       Ensuring every transaction is protected with cutting-edge
                       security, giving you the confidence to exchange, invest,
                       and grow in a safe and trusted environment.
@@ -253,15 +258,15 @@
                 </li>
                 <li class="features__list-item">
                   <img
-                    class="features__item-icon"
+                    class="features__list-icon"
                     src="./icons/blockchain-icon.svg"
                     alt="feature icon"
                   />
-                  <div class="features__item-content">
-                    <p class="features__item-name">
+                  <div class="features__list-content">
+                    <p class="features__list-name">
                       Blockchain and decentralization
                     </p>
-                    <p class="features__item-desc">
+                    <p class="features__list-desc">
                       Most important of all, the assurance of blockchain and
                       decentralization helps in encouraging communication
                       between software and browser plugins.
@@ -457,5 +462,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>

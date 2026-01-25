@@ -1,4 +1,5 @@
 @use './vars';
+@use './mixins';
 
 .footer {
   background-color: vars.$color-black;
@@ -90,13 +91,48 @@
     right: 0;
   }
 
-  &__btn-icon {
-  }
-
   &__copyright {
     font-size: 12px;
     color: vars.$color-gray1;
     text-align: center;
     padding: 40px 0;
+  }
+
+  @include mixins.media-tablet {
+    &__left {
+      flex-grow: 1;
+    }
+  }
+
+  @include mixins.media-mobile {
+    &__container {
+      padding-top: 40px;
+    }
+
+    &__top {
+      gap: 40px;
+    }
+
+    &__left {
+      flex-direction: column;
+      text-align: center;
+      gap: 50px;
+    }
+
+    &__logo {
+      margin: 0 auto;
+    }
+
+    &__nav-subtitle {
+      margin: 0 0 12px 0;
+    }
+
+    &__form-subtitle {
+      max-width: 100%;
+    }
+
+    &__copyright {
+      padding: 20px 0;
+    }
   }
 }

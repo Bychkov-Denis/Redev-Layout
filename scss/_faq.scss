@@ -3,6 +3,7 @@
 
 .faq {
   background-color: vars.$color-black;
+  overflow-x: hidden;
 
   @include mixins.absolute-overlay {
     top: 116px;
@@ -27,6 +28,7 @@
     font-size: 48px;
     color: vars.$color-white;
     line-height: 100%;
+    text-transform: capitalize;
   }
 
   &__desc {
@@ -62,5 +64,29 @@
   &__item-icon {
     width: 20px;
     height: 20px;
+  }
+
+  @include mixins.media-mobile {
+    &__container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__content {
+      gap: 16px;
+      margin: 0 0 32px 0;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+
+    &__list {
+      gap: 16px;
+    }
   }
 }

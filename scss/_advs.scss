@@ -3,6 +3,7 @@
 
 .advs {
   background-color: vars.$color-black;
+  overflow-x: hidden;
 
   @include mixins.absolute-overlay {
     top: 116px;
@@ -47,15 +48,19 @@
     padding: 48px 36px;
     flex: 0 1 384px;
     background: rgba(255, 255, 255, 0.04);
+    $border-width: 1px;
+    border-radius: 12px;
+    position: relative;
+    @include mixins.gradient-border($border-width);
   }
 
-  &__icon {
+  &__list-icon {
     width: 48px;
     height: 48px;
     margin: 0 0 36px 0;
   }
 
-  &__name {
+  &__list-name {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 140%;
@@ -63,7 +68,47 @@
     color: vars.$color-white;
   }
 
-  &__desc {
+  &__list-desc {
     color: vars.$color-gray1;
+  }
+
+  @include mixins.media-mobile {
+    &__container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__content {
+      gap: 16px;
+      max-width: 100%;
+      margin: 0 0 32px 0;
+    }
+
+    &__label {
+      line-height: 17px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__list {
+      gap: 16px;
+    }
+
+    &__list-item {
+      padding: 30px 0;
+    }
+
+    &__list-desc {
+      max-width: 312px;
+      margin: 0 auto;
+      line-height: 20px;
+    }
   }
 }

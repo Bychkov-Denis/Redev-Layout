@@ -3,6 +3,7 @@
 
 .stats {
   background-color: vars.$color-gray4;
+  overflow-x: hidden;
 
   @include mixins.absolute-overlay {
     bottom: 31px;
@@ -62,5 +63,43 @@
     font-size: 20px;
     line-height: 140%;
     color: vars.$color-gray1;
+  }
+
+  @include mixins.media-mobile {
+    &__container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__content {
+      gap: 16px;
+      margin: 0 auto 32px;
+    }
+
+    &__label {
+      line-height: 17px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__item {
+      gap: 12px;
+
+      &:last-child {
+        gap: 20px;
+      }
+    }
   }
 }
