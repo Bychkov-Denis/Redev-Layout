@@ -1,0 +1,33 @@
+@use './vars';
+@use './mixins';
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__link {
+    color: vars.$color-gray1;
+    font-size: 16px;
+    line-height: 20px;
+    transition: vars.$transition;
+
+    &:hover {
+      color: vars.$color-white;
+    }
+  }
+
+  @include mixins.media-tablet {
+    &__list {
+      flex-direction: column;
+      text-align: center;
+      gap: 24px;
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}

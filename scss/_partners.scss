@@ -1,0 +1,48 @@
+@use './vars';
+@use './mixins';
+
+.partners {
+  padding: 40px 0;
+  background-color: vars.$color-gray4;
+
+  &__partners-container {
+    max-width: 941px;
+    padding: 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0 0 40px 0;
+    color: vars.$color-gray1;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 0 129px;
+  }
+
+  @include mixins.media-mobile {
+    &__title {
+      line-height: 20px;
+      margin: 0 0 32px 0;
+    }
+
+    &__list {
+      column-gap: 20px;
+      row-gap: 16px;
+    }
+
+    &__item {
+      flex: 0 1 97px;
+    }
+  }
+}

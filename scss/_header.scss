@@ -4,7 +4,6 @@
 .header {
   background-color: vars.$color-black;
   padding: 20px 0;
-  position: relative;
 
   &__container {
     display: flex;
@@ -13,8 +12,6 @@
 
   &__logo {
     flex: 0 1 310.5px;
-    position: relative;
-    z-index: 101;
   }
 
   &__right {
@@ -25,19 +22,6 @@
     transition: all 0.4s ease-in;
   }
 
-  &__menu-list {
-    display: flex;
-    gap: 40px;
-  }
-
-  &__menu-link {
-    color: vars.$color-gray1;
-
-    &:hover {
-      color: vars.$color-white;
-    }
-  }
-
   &__actions {
     display: flex;
     gap: 16px;
@@ -45,6 +29,7 @@
 
   &__login {
     font-size: 16px;
+    line-height: 20px;
     text-align: center;
     padding: 10px 24px;
     color: vars.$color-white;
@@ -91,10 +76,6 @@
   }
 
   @include mixins.media-tablet {
-    & {
-      padding: 20px 0;
-    }
-
     &__logo {
       flex-grow: 1;
     }
@@ -115,16 +96,6 @@
       gap: 24px;
       transform: translateY(-100%);
       z-index: 100;
-    }
-
-    &__menu-list {
-      flex-direction: column;
-      text-align: center;
-      gap: 24px;
-    }
-
-    &__menu-link {
-      font-size: 18px;
     }
 
     &__actions {

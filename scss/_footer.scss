@@ -3,13 +3,10 @@
 
 .footer {
   background-color: vars.$color-black;
-
-  &__container {
-    padding-top: 80px;
-  }
+  padding-top: 80px;
 
   &__top {
-    padding: 40px 0;
+    margin: 0 0 40px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,11 +39,16 @@
 
   &__nav-link {
     font-size: 14px;
+    line-height: 100%;
     color: vars.$color-gray1;
   }
 
-  &__form {
+  &__form-wrapper {
     flex: 0 1 385px;
+  }
+
+  &__form {
+    position: relative;
   }
 
   &__form-subtitle {
@@ -58,11 +60,9 @@
     margin: 0 0 20px 0;
   }
 
-  &__form-container {
-    position: relative;
-  }
-
   &__form-input {
+    font-size: 14px;
+    line-height: 100%;
     width: 100%;
     color: vars.$color-gray1;
     border-bottom: 0.5px solid vars.$color-gray1;
@@ -91,6 +91,7 @@
 
   &__copyright {
     font-size: 12px;
+    line-height: 15px;
     color: vars.$color-gray1;
     text-align: center;
     padding: 40px 0;
@@ -100,12 +101,14 @@
     &__left {
       flex-grow: 1;
     }
+
+    &__top {
+      margin: 0;
+    }
   }
 
   @include mixins.media-mobile {
-    &__container {
-      padding-top: 40px;
-    }
+    padding-top: 40px;
 
     &__top {
       gap: 40px;

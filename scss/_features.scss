@@ -2,17 +2,13 @@
 @use './mixins';
 
 .features {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: vars.$color-black;
   backdrop-filter: blur(240px);
-  overflow-x: hidden;
 
   @include mixins.absolute-overlay {
     top: 96px;
-  }
-
-  &__container {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   &__content {
@@ -52,8 +48,8 @@
   }
 
   &__img-container {
-    width: 506px;
-    height: 506px;
+    max-width: 506px;
+    aspect-ratio: 1 / 1;
   }
 
   &__img {
@@ -85,26 +81,28 @@
     height: 30px;
   }
 
-  &__list-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
   &__list-name {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 140%;
     color: vars.$color-white;
+    margin: 0 0 8px 0;
   }
 
   &__list-desc {
+    font-size: 16px;
     line-height: 122%;
     color: vars.$color-gray1;
   }
 
+  @include mixins.media-tablet {
+    &::before {
+      display: none;
+    }
+  }
+
   @include mixins.media-mobile {
-    &__container {
+    & {
       padding-top: 40px;
       padding-bottom: 40px;
     }

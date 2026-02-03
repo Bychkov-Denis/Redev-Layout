@@ -3,6 +3,9 @@
 
 .revolutionary {
   background-color: vars.$color-gray4;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   &__container {
     max-width: 918px;
@@ -10,9 +13,6 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
   }
 
   &__title {
@@ -35,10 +35,8 @@
   }
 
   @include mixins.media-mobile {
-    &__container {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     &__title {
       font-size: 28px;

@@ -3,30 +3,30 @@
 
 .hero {
   background-color: vars.$color-black;
+  padding-top: 88px;
+  padding-bottom: 88px;
 
   &__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 88px;
-    padding-bottom: 88px;
   }
 
   &__left {
-    padding: 0 27px 0 0;
-    display: flex;
-    flex-direction: column;
+    margin: 0 27px 0 0;
     flex: 0 1 688px;
-    gap: 40px;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin: 0 0 40px 0;
   }
 
   &__label {
+    font-size: 14px;
+    line-height: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -47,10 +47,6 @@
     height: 9px;
     border-radius: 50%;
     background-color: vars.$color-green;
-  }
-
-  &__label-text {
-    font-size: 14px;
   }
 
   &__title {
@@ -95,38 +91,11 @@
     height: 100%;
   }
 
-  &__partners {
-    padding: 40px 0;
-    background-color: vars.$color-gray4;
-    color: vars.$color-gray1;
-  }
-
-  &__partners-container {
-    max-width: 941px;
-    padding: 0;
-  }
-
-  &__partners-text {
-    text-align: center;
-    margin: 0 0 40px 0;
-  }
-
-  &__partners-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 72px;
-    flex-wrap: wrap;
-  }
-
-  &__partners-item {
-    flex: 0 0 129px;
-  }
-
   @include mixins.media-tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     &__container {
-      padding-top: 40px;
-      padding-bottom: 40px;
       flex-wrap: wrap;
       gap: 40px;
     }
@@ -137,9 +106,7 @@
       text-align: center;
       align-items: center;
       gap: 32px;
-    }
-
-    &__content {
+      margin: 0;
     }
 
     &__label {
@@ -154,6 +121,7 @@
     &__desc {
       font-size: 16px;
       line-height: 20px;
+      max-width: 100%;
     }
 
     &__actions {
@@ -180,18 +148,12 @@
   }
 
   @include mixins.media-mobile {
-    &__partners-text {
-      line-height: 20px;
+    &__container {
+      gap: 32px;
+    }
+
+    &__content {
       margin: 0 0 32px 0;
-    }
-
-    &__partners-list {
-      column-gap: 20px;
-      row-gap: 16px;
-    }
-
-    &__partners-item {
-      flex: 0 1 97px;
     }
   }
 }

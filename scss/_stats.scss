@@ -2,17 +2,13 @@
 @use './mixins';
 
 .stats {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
   background-color: vars.$color-gray4;
-  overflow-x: hidden;
 
   @include mixins.absolute-overlay {
     bottom: 31px;
-  }
-
-  &__container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    text-align: center;
   }
 
   &__content {
@@ -44,20 +40,13 @@
     display: flex;
     gap: 72px;
     justify-content: center;
-    max-width: 484px;
-    margin: 0 auto;
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 
   &__value {
     font-size: 48px;
     color: vars.$color-green;
     line-height: 100%;
+    margin: 0 0 20px 0;
   }
 
   &__caption {
@@ -66,8 +55,14 @@
     color: vars.$color-gray1;
   }
 
+  @include mixins.media-tablet {
+    &::before {
+      display: none;
+    }
+  }
+
   @include mixins.media-mobile {
-    &__container {
+    & {
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -95,11 +90,15 @@
       gap: 24px;
     }
 
-    &__item {
-      gap: 12px;
+    &__value {
+      margin: 0 0 12px 0;
+    }
 
+    &__item {
       &:last-child {
-        gap: 20px;
+        .stats__value {
+          margin: 0 0 20px 0;
+        }
       }
     }
   }

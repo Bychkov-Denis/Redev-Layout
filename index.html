@@ -3,549 +3,538 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>NeoFi</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container container">
-          <a class="header__logo logo" href="#">
-            <img
-              class="logo__img"
-              src="./icons/neofi-logo.svg"
-              alt="NeoFi logo"
-            />
-            <p class="logo__text">NeoFi</p>
-          </a>
-          <div class="header__right">
-            <nav class="header__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#">Home</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#">Features</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#">Testimonial</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="#">FAQ</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__actions">
-              <a class="header__login" href="#">Log in</a>
-              <a class="header__cta button" href="#">Try For Free</a>
-            </div>
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo logo" href="#">
+          <img
+            class="logo__img"
+            src="./icons/neofi-logo.svg"
+            alt="NeoFi logo"
+          />
+          NeoFi
+        </a>
+        <div class="header__right">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Features</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Testimonial</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <a class="header__login" href="#">Log in</a>
+            <a class="header__cta button" href="#">Try For Free</a>
           </div>
-          <button class="header__menu-btn">
-            <div class="header__menu-icon"></div>
-          </button>
         </div>
-      </header>
-      <main class="main">
-        <section class="hero">
-          <div class="hero__container container">
-            <div class="hero__left">
-              <div class="hero__content">
-                <div class="hero__label">
-                  <div class="hero__label-icon"></div>
-                  <p class="hero__label-text">Decentralised</p>
-                </div>
-                <h1 class="hero__title">Revolutionizing Web3 Finance</h1>
-                <p class="hero__desc">
-                  Secure, scalable, and decentralized solutions for your digital
-                  assets—experience the future of financial freedom.
-                </p>
+        <button class="header__menu-btn">
+          <div class="header__menu-icon"></div>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__left">
+            <div class="hero__content">
+              <div class="hero__label">
+                <div class="hero__label-icon"></div>
+                Decentralised
               </div>
-              <div class="hero__actions">
-                <a class="hero__cta button" href="#">Get started</a>
-                <button class="hero__btn button button--icon">
-                  <svg
-                    class="hero__btn-icon"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 5.14001V19.14L19 12.14L8 5.14001Z"
-                      fill="#E5E5E5"
-                    />
-                  </svg>
-                  Watch video
-                </button>
-              </div>
-            </div>
-            <div class="hero__right">
-              <img class="hero__img" src="./img/hero-img.png" alt="hero img" />
-            </div>
-          </div>
-          <div class="hero__partners">
-            <div class="hero__partners-container container">
-              <p class="hero__partners-text">Satisfied partners</p>
-              <ul class="hero__partners-list">
-                <li class="hero__partners-item">
-                  <img
-                    src="./icons/partner-logo-1.svg"
-                    alt="partner logo"
-                    class="hero__partners-logo"
-                  />
-                </li>
-                <li class="hero__partners-item">
-                  <img
-                    src="./icons/partner-logo-2.svg"
-                    alt="partner logo"
-                    class="hero__partners-logo"
-                  />
-                </li>
-                <li class="hero__partners-item">
-                  <img
-                    src="./icons/partner-logo-3.svg"
-                    alt="partner logo"
-                    class="hero__partners-logo"
-                  />
-                </li>
-                <li class="hero__partners-item">
-                  <img
-                    src="./icons/partner-logo-4.svg"
-                    alt="partner logo"
-                    class="hero__partners-logo"
-                  />
-                </li>
-                <li class="hero__partners-item">
-                  <img
-                    src="./icons/partner-logo-5.svg"
-                    alt="partner logo"
-                    class="hero__partners-logo"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="advs">
-          <div class="advs__container container">
-            <div class="advs__content">
-              <span class="advs__label section-label">Features</span>
-              <h2 class="advs__title">Future Breakdown</h2>
-              <p class="advs__text">
+              <h1 class="hero__title">Revolutionizing Web3 Finance</h1>
+              <p class="hero__desc">
                 Secure, scalable, and decentralized solutions for your digital
                 assets—experience the future of financial freedom.
               </p>
             </div>
-            <ul class="advs__list">
-              <li class="advs__list-item">
-                <img
-                  class="advs__list-icon"
-                  src="./icons/scalability-icon.svg"
-                  alt="features icon"
-                />
-                <p class="advs__list-name">Scalability</p>
-                <p class="advs__list-desc">
-                  Adapt and grow, no matter the demand on grow
-                </p>
-              </li>
-              <li class="advs__list-item">
-                <img
-                  class="advs__list-icon"
-                  src="./icons/decentralisation-icon.svg"
-                  alt="features icon"
-                />
-                <p class="advs__list-name">Decentralisation</p>
-                <p class="advs__list-desc">
-                  Decentralization. Web3 aims to move away from the centralized
-                </p>
-              </li>
-              <li class="advs__list-item">
-                <img
-                  class="advs__list-icon"
-                  src="./icons/connectivity-icon.svg"
-                  alt="features icon"
-                />
-                <p class="advs__list-name">Connectivity</p>
-                <p class="advs__list-desc">
-                  computers will be able to understand information similarly to
-                  humans
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="stats">
-          <div class="stats__container container">
-            <div class="stats__content">
-              <span class="stats__label section-label">Statistics</span>
-              <h2 class="stats__title">Completely Leverage Product</h2>
-              <p class="stats__desc">
-                Leading the way in blockchain innovation, we are redefining how
-                the world connects, secures, and transacts, bringing a new era
-                of decentralized technology.
-              </p>
-            </div>
-            <ul class="stats__list">
-              <li class="stats__item">
-                <span class="stats__value">2M+</span>
-                <span class="stats__caption">Users</span>
-              </li>
-              <li class="stats__item">
-                <span class="stats__value">500K+</span>
-                <span class="stats__caption">Transactions</span>
-              </li>
-              <li class="stats__item">
-                <span class="stats__value">35+</span>
-                <span class="stats__caption">Countries</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="features">
-          <div class="features__container container">
-            <div class="features__content">
-              <span class="features__label section-label">Feature</span>
-              <h2 class="features__title">
-                the future of blockchain technology
-              </h2>
-              <p class="features__text">
-                Leading the way in blockchain innovation, we are redefining how
-                the world connects, secures, and transacts, bringing a new era
-                of decentralized technology.
-              </p>
-            </div>
-            <div class="features__body">
-              <div class="features__visual">
-                <div class="features__img-container">
-                  <img
-                    class="features__img"
-                    src="./img/feature-img.png"
-                    alt="features img"
+            <div class="hero__actions">
+              <a class="hero__cta button" href="#">Get started</a>
+              <button class="hero__btn button button--icon">
+                <svg
+                  class="hero__btn-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 5.14001V19.14L19 12.14L8 5.14001Z"
+                    fill="#E5E5E5"
                   />
+                </svg>
+                Watch video
+              </button>
+            </div>
+          </div>
+          <div class="hero__right">
+            <img class="hero__img" src="./img/hero-img.png" alt="hero img" />
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="partners__container container">
+          <h2 class="partners__title">Satisfied partners</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img
+                src="./icons/partner-logo-1.svg"
+                alt="partner logo"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./icons/partner-logo-2.svg"
+                alt="partner logo"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./icons/partner-logo-3.svg"
+                alt="partner logo"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./icons/partner-logo-4.svg"
+                alt="partner logo"
+                class="partners__logo"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="./icons/partner-logo-5.svg"
+                alt="partner logo"
+                class="partners__logo"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advs">
+        <div class="advs__container container">
+          <div class="advs__content">
+            <p class="advs__label section-label">Features</p>
+            <h2 class="advs__title">Future Breakdown</h2>
+            <p class="advs__text">
+              Secure, scalable, and decentralized solutions for your digital
+              assets—experience the future of financial freedom.
+            </p>
+          </div>
+          <ul class="advs__list">
+            <li class="advs__item">
+              <img
+                class="advs__icon"
+                src="./icons/scalability-icon.svg"
+                alt="features icon"
+              />
+              <h3 class="advs__name">Scalability</h3>
+              <p class="advs__desc">
+                Adapt and grow, no matter the demand on grow
+              </p>
+            </li>
+            <li class="advs__item">
+              <img
+                class="advs__icon"
+                src="./icons/decentralisation-icon.svg"
+                alt="features icon"
+              />
+              <h3 class="advs__name">Decentralisation</h3>
+              <p class="advs__desc">
+                Decentralization. Web3 aims to move away from the centralized
+              </p>
+            </li>
+            <li class="advs__item">
+              <img
+                class="advs__icon"
+                src="./icons/connectivity-icon.svg"
+                alt="features icon"
+              />
+              <h3 class="advs__name">Connectivity</h3>
+              <p class="advs__desc">
+                computers will be able to understand information similarly to
+                humans
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="stats">
+        <div class="stats__container container">
+          <div class="stats__content">
+            <p class="stats__label section-label">Statistics</p>
+            <h2 class="stats__title">Completely Leverage Product</h2>
+            <p class="stats__desc">
+              Leading the way in blockchain innovation, we are redefining how
+              the world connects, secures, and transacts, bringing a new era of
+              decentralized technology.
+            </p>
+          </div>
+          <ul class="stats__list">
+            <li class="stats__item">
+              <p class="stats__value">2M+</p>
+              <span class="stats__caption">Users</span>
+            </li>
+            <li class="stats__item">
+              <p class="stats__value">500K+</p>
+              <span class="stats__caption">Transactions</span>
+            </li>
+            <li class="stats__item">
+              <p class="stats__value">35+</p>
+              <span class="stats__caption">Countries</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__container container">
+          <div class="features__content">
+            <p class="features__label section-label">Feature</p>
+            <h2 class="features__title">the future of blockchain technology</h2>
+            <p class="features__text">
+              Leading the way in blockchain innovation, we are redefining how
+              the world connects, secures, and transacts, bringing a new era of
+              decentralized technology.
+            </p>
+          </div>
+          <div class="features__body">
+            <div class="features__img-container">
+              <img
+                class="features__img"
+                src="./img/feature-img.png"
+                alt="features img"
+              />
+            </div>
+            <ul class="features__list">
+              <li class="features__list-item">
+                <img
+                  class="features__list-icon"
+                  src="./icons/flow-connection-icon.svg"
+                  alt="feature icon"
+                />
+                <div class="features__list-content">
+                  <h3 class="features__list-name">Connectivity and ubiquity</h3>
+                  <p class="features__list-desc">
+                    Connectivity and Ubiquity. The focal points of Web 3.0
+                    emphasize connectivity and ubiquity, ensuring seamless
+                    interactions between users and devices within
+                  </p>
+                </div>
+              </li>
+              <li class="features__list-item">
+                <img
+                  class="features__list-icon"
+                  src="./icons/security-icon.svg"
+                  alt="feature icon"
+                />
+                <div class="features__list-content">
+                  <h3 class="features__list-name">Secure Transaction</h3>
+                  <p class="features__list-desc">
+                    Ensuring every transaction is protected with cutting-edge
+                    security, giving you the confidence to exchange, invest, and
+                    grow in a safe and trusted environment.
+                  </p>
+                </div>
+              </li>
+              <li class="features__list-item">
+                <img
+                  class="features__list-icon"
+                  src="./icons/blockchain-icon.svg"
+                  alt="feature icon"
+                />
+                <div class="features__list-content">
+                  <h3 class="features__list-name">
+                    Blockchain and decentralization
+                  </h3>
+                  <p class="features__list-desc">
+                    Most important of all, the assurance of blockchain and
+                    decentralization helps in encouraging communication between
+                    software and browser plugins.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonials__content">
+          <p class="testimonials__label section-label">Testimonial</p>
+          <h2 class="testimonials__title">Trusted By innovators</h2>
+          <p class="testimonials__desc">
+            Secure your digital assets with the peace of mind that comes from
+            knowing you are protected by the best technology in the blockchain
+            space.
+          </p>
+        </div>
+        <div class="testimonials__slider swiper">
+          <ul class="testimonials__list swiper-wrapper">
+            <li class="testimonial swiper-slide">
+              <p class="testimonial__text">
+                “AI streamlines international client coordination by scheduling
+                emails for optimal inbox timing.”
+              </p>
+              <div class="testimonial__person">
+                <img
+                  class="testimonial__img"
+                  src="./img/avatar-img.png"
+                  alt="person avatar"
+                />
+                <div class="testimonial__info">
+                  <p class="testimonial__name">Eleanor Pena</p>
+                  <p class="testimonial__job">Co-founder</p>
                 </div>
               </div>
-              <ul class="features__list">
-                <li class="features__list-item">
-                  <img
-                    class="features__list-icon"
-                    src="./icons/flow-connection-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="features__list-content">
-                    <p class="features__list-name">Connectivity and ubiquity</p>
-                    <p class="features__list-desc">
-                      Connectivity and Ubiquity. The focal points of Web 3.0
-                      emphasize connectivity and ubiquity, ensuring seamless
-                      interactions between users and devices within
-                    </p>
-                  </div>
+            </li>
+            <li class="testimonial swiper-slide">
+              <p class="testimonial__text">
+                “AI streamlines international client coordination by scheduling
+                emails for optimal inbox timing.”
+              </p>
+              <div class="testimonial__person">
+                <img
+                  class="testimonial__img"
+                  src="./img/avatar-img.png"
+                  alt="person avatar"
+                />
+                <div class="testimonial__info">
+                  <p class="testimonial__name">Eleanor Pena</p>
+                  <p class="testimonial__job">Co-founder</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonial swiper-slide">
+              <p class="testimonial__text">
+                “AI streamlines international client coordination by scheduling
+                emails for optimal inbox timing.”
+              </p>
+              <div class="testimonial__person">
+                <img
+                  class="testimonial__img"
+                  src="./img/avatar-img.png"
+                  alt="person avatar"
+                />
+                <div class="testimonial__info">
+                  <p class="testimonial__name">Eleanor Pena</p>
+                  <p class="testimonial__job">Co-founder</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonial swiper-slide">
+              <p class="testimonial__text">
+                “AI streamlines international client coordination by scheduling
+                emails for optimal inbox timing.”
+              </p>
+              <div class="testimonial__person">
+                <img
+                  class="testimonial__img"
+                  src="./img/avatar-img.png"
+                  alt="person avatar"
+                />
+                <div class="testimonial__info">
+                  <p class="testimonial__name">Eleanor Pena</p>
+                  <p class="testimonial__job">Co-founder</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faqs">
+        <div class="faqs__container container">
+          <div class="faqs__content">
+            <p class="faqs__label section-label">FAQ</p>
+            <h2 class="faqs__title">Get answers to common questions</h2>
+            <p class="faqs__desc">
+              From basics to advanced topics, find everything you need to know
+              right here. Let us help you simplify the process and find the
+              clarity you're looking
+            </p>
+          </div>
+          <ul class="faqs__list">
+            <li class="faq">
+              <p class="faq__text">What is NexoFi, and how does it work?</p>
+              <img
+                class="faq__icon"
+                src="./icons/plus-icon.svg"
+                alt="question icon"
+              />
+            </li>
+            <li class="faq">
+              <p class="faq__text">
+                How is blockchain related to cryptocurrency?
+              </p>
+              <img
+                class="faq__icon"
+                src="./icons/plus-icon.svg"
+                alt="question icon"
+              />
+            </li>
+            <li class="faq">
+              <p class="faq__text">Is Blockchaintechnology secure?</p>
+              <img
+                class="faq__icon"
+                src="./icons/plus-icon.svg"
+                alt="question icon"
+              />
+            </li>
+            <li class="faq">
+              <p class="faq__text">How does blockchain enhance security?</p>
+              <img
+                class="faq__icon"
+                src="./icons/plus-icon.svg"
+                alt="question icon"
+              />
+            </li>
+            <li class="faq">
+              <p class="faq__text">Can blockchain be hacked?</p>
+              <img
+                class="faq__icon"
+                src="./icons/plus-icon.svg"
+                alt="question icon"
+              />
+            </li>
+            <li class="faq">
+              <p class="faq__text">
+                How can i implement blockchain in my industry
+              </p>
+              <img
+                class="faq__icon"
+                src="./icons/plus-icon.svg"
+                alt="question icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="revolutionary">
+        <div class="revolutionary__container container">
+          <p class="revolutionary__label section-label">Revolutionary</p>
+          <h2 class="revolutionary__title">
+            Enhance Your Design Workflow with Seamless Landing Pages
+          </h2>
+          <p class="revolutionary__desc">
+            Join a thriving community committed to safeguarding digital assets,
+            empowering your financial journey with trust, innovation, and
+            security
+          </p>
+          <a class="revolutionary__link button" href="#">Get Started</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <a class="footer__logo logo" href="#">
+              <img
+                class="logo__img"
+                src="./icons/neofi-logo.svg"
+                alt="NeoFi logo"
+              />
+              NeoFi
+            </a>
+            <nav class="footer__nav">
+              <h3 class="footer__nav-subtitle">Quick links</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Home</a>
                 </li>
-                <li class="features__list-item">
-                  <img
-                    class="features__list-icon"
-                    src="./icons/security-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="features__list-content">
-                    <p class="features__list-name">Secure Transaction</p>
-                    <p class="features__list-desc">
-                      Ensuring every transaction is protected with cutting-edge
-                      security, giving you the confidence to exchange, invest,
-                      and grow in a safe and trusted environment.
-                    </p>
-                  </div>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Features</a>
                 </li>
-                <li class="features__list-item">
-                  <img
-                    class="features__list-icon"
-                    src="./icons/blockchain-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="features__list-content">
-                    <p class="features__list-name">
-                      Blockchain and decentralization
-                    </p>
-                    <p class="features__list-desc">
-                      Most important of all, the assurance of blockchain and
-                      decentralization helps in encouraging communication
-                      between software and browser plugins.
-                    </p>
-                  </div>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Community</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Support</a>
                 </li>
               </ul>
-            </div>
+            </nav>
+            <nav class="footer__nav">
+              <h3 class="footer__nav-subtitle">Help</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Help Centre</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">FAQ</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Forum</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <h3 class="footer__nav-subtitle">Social Media</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Facebook</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Instagram</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">LinkedIn</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </section>
-        <section class="testimonial">
-          <div class="testimonial__container container">
-            <div class="testimonial__content">
-              <span class="testimonial__label section-label">Testimonial</span>
-              <h2 class="testimonial__title">Trusted By innovators</h2>
-              <p class="testimonial__desc">
-                Secure your digital assets with the peace of mind that comes
-                from knowing you are protected by the best technology in the
-                blockchain space.
-              </p>
-            </div>
-            <ul class="testimonial__list">
-              <li class="testimonial__list-item">
-                <p class="testimonial__list-text">
-                  “AI streamlines international client coordination by
-                  scheduling emails for optimal inbox timing.”
-                </p>
-                <div class="testimonial__list-person">
-                  <img
-                    class="testimonial__list-img"
-                    src="./img/avatar-img.png"
-                    alt="person avatar"
-                  />
-                  <div class="testimonial__list-info">
-                    <p class="testimonial__list-name">Eleanor Pena</p>
-                    <p class="testimonial__list-job">Co-founder</p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonial__list-item">
-                <p class="testimonial__list-text">
-                  “AI streamlines international client coordination by
-                  scheduling emails for optimal inbox timing.”
-                </p>
-                <div class="testimonial__list-person">
-                  <img
-                    class="testimonial__list-img"
-                    src="./img/avatar-img.png"
-                    alt="person avatar"
-                  />
-                  <div class="testimonial__list-info">
-                    <p class="testimonial__list-name">Eleanor Pena</p>
-                    <p class="testimonial__list-job">Co-founder</p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonial__list-item">
-                <p class="testimonial__list-text">
-                  “AI streamlines international client coordination by
-                  scheduling emails for optimal inbox timing.”
-                </p>
-                <div class="testimonial__list-person">
-                  <img
-                    class="testimonial__list-img"
-                    src="./img/avatar-img.png"
-                    alt="person avatar"
-                  />
-                  <div class="testimonial__list-info">
-                    <p class="testimonial__list-name">Eleanor Pena</p>
-                    <p class="testimonial__list-job">Co-founder</p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonial__list-item">
-                <p class="testimonial__list-text">
-                  “AI streamlines international client coordination by
-                  scheduling emails for optimal inbox timing.”
-                </p>
-                <div class="testimonial__list-person">
-                  <img
-                    class="testimonial__list-img"
-                    src="./img/avatar-img.png"
-                    alt="person avatar"
-                  />
-                  <div class="testimonial__list-info">
-                    <p class="testimonial__list-name">Eleanor Pena</p>
-                    <p class="testimonial__list-job">Co-founder</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="faq">
-          <div class="faq__container container">
-            <div class="faq__content">
-              <span class="faq__label section-label">FAQ</span>
-              <h2 class="faq__title">Get answers to common questions</h2>
-              <p class="faq__desc">
-                From basics to advanced topics, find everything you need to know
-                right here. Let us help you simplify the process and find the
-                clarity you're looking
-              </p>
-            </div>
-            <ul class="faq__list">
-              <li class="faq__item">
-                <div class="faq__item-text">
-                  What is NexoFi, and how does it work?
-                </div>
-                <img
-                  class="faq__item-icon"
-                  src="./icons/plus-icon.svg"
-                  alt="question icon"
-                />
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-text">
-                  How is blockchain related to cryptocurrency?
-                </div>
-                <img
-                  class="faq__item-icon"
-                  src="./icons/plus-icon.svg"
-                  alt="question icon"
-                />
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-text">
-                  Is Blockchaintechnology secure?
-                </div>
-                <img
-                  class="faq__item-icon"
-                  src="./icons/plus-icon.svg"
-                  alt="question icon"
-                />
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-text">
-                  How does blockchain enhance security?
-                </div>
-                <img
-                  class="faq__item-icon"
-                  src="./icons/plus-icon.svg"
-                  alt="question icon"
-                />
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-text">Can blockchain be hacked?</div>
-                <img
-                  class="faq__item-icon"
-                  src="./icons/plus-icon.svg"
-                  alt="question icon"
-                />
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-text">
-                  How can i implement blockchain in my industry
-                </div>
-                <img
-                  class="faq__item-icon"
-                  src="./icons/plus-icon.svg"
-                  alt="question icon"
-                />
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="revolutionary">
-          <div class="revolutionary__container container">
-            <span class="revolutionary__label section-label"
-              >Revolutionary</span
-            >
-            <h2 class="revolutionary__title">
-              Enhance Your Design Workflow with Seamless Landing Pages
-            </h2>
-            <p class="revolutionary__desc">
-              Join a thriving community committed to safeguarding digital
-              assets, empowering your financial journey with trust, innovation,
-              and security
+          <div class="footer__form-wrapper">
+            <p class="footer__form-subtitle">
+              Join our mailing list for updates
             </p>
-            <a class="revolutionary__link button" href="#">Get Started</a>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__container container">
-          <div class="footer__top">
-            <div class="footer__left">
-              <a class="footer__logo logo" href="#">
-                <img
-                  class="logo__img"
-                  src="./icons/neofi-logo.svg"
-                  alt="NeoFi logo"
-                />
-                <p class="logo__text">NeoFi</p>
-              </a>
-              <nav class="footer__nav">
-                <h4 class="footer__nav-subtitle">Quick links</h4>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Home</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Features</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Community</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Support</a>
-                  </li>
-                </ul>
-              </nav>
-              <nav class="footer__nav">
-                <h4 class="footer__nav-subtitle">Help</h4>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Help Centre</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">FAQ</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Forum</a>
-                  </li>
-                </ul>
-              </nav>
-              <nav class="footer__nav">
-                <h4 class="footer__nav-subtitle">Social Media</h4>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Facebook</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Instagram</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">LinkedIn</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__form">
-              <p class="footer__form-subtitle">
-                Join our mailing list for updates
-              </p>
-              <form class="footer__form">
-                <div class="footer__form-container">
-                  <input
-                    class="footer__form-input"
-                    type="email"
-                    placeholder="Your email address"
+            <form class="footer__form">
+              <input
+                class="footer__form-input"
+                type="email"
+                placeholder="Your email address"
+              />
+              <button type="submit" class="footer__btn">
+                <svg
+                  class="footer__btn-icon"
+                  width="14"
+                  height="11"
+                  viewBox="0 0 14 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.875 5.375H12.875M12.875 5.375L8.375 0.875M12.875 5.375L8.375 9.875"
+                    stroke="black"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
-                  <button type="submit" class="footer__btn">
-                    <svg
-                      class="footer__btn-icon"
-                      width="14"
-                      height="11"
-                      viewBox="0 0 14 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.875 5.375H12.875M12.875 5.375L8.375 0.875M12.875 5.375L8.375 9.875"
-                        stroke="black"
-                        stroke-width="1.75"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </form>
-            </div>
+                </svg>
+              </button>
+            </form>
           </div>
-          <div class="footer__copyright">© 2025. All rights reserved.</div>
         </div>
-      </footer>
-    </div>
+        <p class="footer__copyright">© 2025. All rights reserved.</p>
+      </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

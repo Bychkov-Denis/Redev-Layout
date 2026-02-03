@@ -3,33 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
-  transition: all 0.2s ease-in;
-}
-
 html {
   height: 100%;
 }
 
 body {
   font-family: 'Alexandria', sans-serif;
-  line-height: 100%;
-  transition: vars.$transiton;
   overflow-x: hidden;
 
   &.menu-open {
     overflow: hidden;
   }
-}
-
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
-  flex: 1 1 auto;
 }
 
 .container {
@@ -42,10 +26,8 @@ body {
   display: flex;
   align-items: center;
   gap: 11px;
-}
-
-.logo__text {
   font-size: 22px;
+  line-height: 27px;
   font-weight: 500;
   color: #ffffff;
 }
@@ -73,19 +55,15 @@ body {
 
 .section-label {
   font-size: 14px;
+  line-height: 17px;
   color: vars.$color-green;
   line-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 12px 20px;
   border: 1px solid vars.$color-gray3;
   border-radius: 24px;
   backdrop-filter: blur(40px);
 }
 
-// Сделать градиентный бордер у элементов
-// Сделать у секций круг с размытием background: #4A5AEC0F; backdrop-filter: blur(279.79998779296875px)
-// Доделать секцию с фаундерами
-// background: linear-gradient(102deg, vars.$color-gray2, #b3b3b3);
-// opacity: 0.6;
+// Остановился на том что в секции Отзывы надо убрать обёртку
+// Убрать оверлей на мобилке в тех секциях, где он есть
+// Проверить планшет и мобилку, а тоолько потом отправить

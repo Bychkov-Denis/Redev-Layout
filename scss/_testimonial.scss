@@ -1,19 +1,10 @@
 @use 'vars';
 @use 'mixins';
 
-.testimonial {
-  overflow: hidden;
+.testimonials {
+  padding-top: 80px;
+  padding-bottom: 150px;
   background-color: vars.$color-gray4;
-  position: relative;
-
-  @include mixins.absolute-overlay {
-    top: 116px;
-  }
-
-  &__container {
-    padding-top: 80px;
-    padding-bottom: 150px;
-  }
 
   &__content {
     max-width: 644px;
@@ -39,55 +30,9 @@
     color: vars.$color-gray1;
   }
 
-  &__list {
-    display: flex;
-    gap: 20px;
-    width: 1552px;
-    margin-left: 50%;
-    transform: translate(-50%);
-  }
-
-  &__list-item {
-    background-color: vars.$color-black;
-    flex-basis: 373px;
-    position: relative;
-    $borderWidth: 1px;
-    border-radius: 16px;
-    padding: 32px;
-    @include mixins.gradient-border($borderWidth);
-  }
-
-  &__list-text {
-    color: #ededf2;
-    margin: 0 0 32px 0;
-  }
-
-  &__list-person {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  &__list-img {
-    width: 48px;
-    height: 48px;
-  }
-
-  &__list-name {
-    font-size: 14px;
-    color: #ffffff;
-  }
-
-  &__list-job {
-    font-size: 12px;
-    color: vars.$color-gray2;
-  }
-
   @include mixins.media-mobile {
-    &__container {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     &__content {
       gap: 16px;
@@ -101,9 +46,51 @@
     &__desc {
       font-size: 16px;
     }
+  }
+}
 
-    &__list-item {
-      flex: 0 0 343px;
-    }
+.testimonial {
+  background-color: vars.$color-black;
+  position: relative;
+  $borderWidth: 1px;
+  border-radius: 16px;
+  padding: 32px;
+  @include mixins.gradient-border($borderWidth);
+  flex-basis: 373px;
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ededf2;
+    margin: 0 0 32px 0;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+
+  &__job {
+    font-size: 12px;
+    line-height: 15px;
+    color: vars.$color-gray2;
+  }
+
+  @include mixins.media-mobile {
+    flex-basis: 343px;
   }
 }

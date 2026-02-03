@@ -1,17 +1,16 @@
 @use './vars';
 @use './mixins';
 
-.faq {
+.faqs {
   background-color: vars.$color-black;
-  overflow-x: hidden;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   @include mixins.absolute-overlay {
     top: 116px;
   }
 
   &__container {
-    padding-top: 80px;
-    padding-bottom: 80px;
     max-width: 895px;
   }
 
@@ -47,27 +46,14 @@
     gap: 30px;
   }
 
-  &__item {
-    padding: 16px 20px;
-    border: 1px solid vars.$color-gray3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-  }
-
-  &__item-text {
-    color: vars.$color-white;
-  }
-
-  &__item-icon {
-    width: 20px;
-    height: 20px;
+  @include mixins.media-tablet {
+    &::before {
+      display: none;
+    }
   }
 
   @include mixins.media-mobile {
-    &__container {
+    & {
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -84,7 +70,30 @@
     &__desc {
       font-size: 16px;
     }
+  }
+}
 
+.faq {
+  padding: 16px 20px;
+  border: 1px solid vars.$color-gray3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+  &__text {
+    font-size: 16px;
+    line-height: 100%;
+    color: vars.$color-white;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  @include mixins.media-mobile {
     &__list {
       gap: 16px;
     }
