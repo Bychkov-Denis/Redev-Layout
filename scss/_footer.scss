@@ -1,0 +1,140 @@
+@use './vars';
+@use './mixins';
+
+.footer {
+  background-color: vars.$color-black;
+  padding-top: 80px;
+
+  &__top {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    gap: 92px;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    align-self: flex-start;
+  }
+
+  &__nav-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    color: vars.$color-white;
+    margin: 0 0 24px 0;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__nav-link {
+    font-size: 14px;
+    line-height: 100%;
+    color: vars.$color-gray1;
+  }
+
+  &__form-wrapper {
+    flex: 0 1 385px;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__form-subtitle {
+    max-width: 198px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    color: #d8d8d8;
+    margin: 0 0 20px 0;
+  }
+
+  &__form-input {
+    font-size: 14px;
+    line-height: 100%;
+    width: 100%;
+    color: vars.$color-gray1;
+    border-bottom: 0.5px solid vars.$color-gray1;
+    padding: 11.5px 0 27.5px;
+    outline: none;
+
+    ::placeholder {
+      font-size: 14px;
+      line-height: 100%;
+      color: vars.$color-gray1;
+    }
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: vars.$color-green;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 15px;
+    color: vars.$color-gray1;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  @include mixins.media-tablet {
+    &__left {
+      flex-grow: 1;
+    }
+
+    &__top {
+      margin: 0;
+    }
+  }
+
+  @include mixins.media-mobile {
+    padding-top: 40px;
+
+    &__top {
+      gap: 40px;
+      padding: 0;
+    }
+
+    &__left {
+      flex-direction: column;
+      text-align: center;
+      gap: 50px;
+    }
+
+    &__logo {
+      margin: 0 auto;
+    }
+
+    &__nav-subtitle {
+      margin: 0 0 12px 0;
+    }
+
+    &__form-subtitle {
+      max-width: 100%;
+    }
+
+    &__copyright {
+      padding: 20px 0;
+    }
+  }
+}

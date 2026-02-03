@@ -1,0 +1,69 @@
+@use './vars';
+@use './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Alexandria', sans-serif;
+  overflow-x: hidden;
+
+  &.menu-open {
+    overflow: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: vars.$container-width;
+  padding: vars.$container-padding;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.button {
+  padding: 14px 24px;
+  font-size: 18px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: vars.$color-green;
+  border-radius: 40px;
+  color: vars.$color-black;
+}
+
+.button--icon {
+  padding: 15px 24px;
+  border: 1.5px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section-label {
+  font-size: 14px;
+  line-height: 17px;
+  color: vars.$color-green;
+  line-height: 100%;
+  padding: 12px 20px;
+  border: 1px solid vars.$color-gray3;
+  border-radius: 24px;
+  backdrop-filter: blur(40px);
+}
+
+// Остановился на том что в секции Отзывы надо убрать обёртку
+// Убрать оверлей на мобилке в тех секциях, где он есть
+// Проверить планшет и мобилку, а тоолько потом отправить

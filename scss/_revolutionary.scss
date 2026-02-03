@@ -1,0 +1,49 @@
+@use './vars';
+@use './mixins';
+
+.revolutionary {
+  background-color: vars.$color-gray4;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__container {
+    max-width: 918px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 100%;
+    color: vars.$color-white;
+    text-transform: capitalize;
+  }
+
+  &__desc {
+    font-family: 'Inter', sans-serif;
+    max-width: 644px;
+    font-size: 18px;
+    line-height: 140%;
+    color: vars.$color-gray1;
+  }
+
+  &__link {
+    border-radius: 0;
+  }
+
+  @include mixins.media-mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use './vars';
+
+@mixin absolute-overlay {
+  &::before {
+    content: '';
+    width: 606px;
+    height: 425px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: vars.$color-overlay;
+    filter: blur(279.79998779296875px);
+    @content;
+  }
+}
+
+@mixin gradient-border($borderWidth) {
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: $borderWidth;
+    background-image: vars.$color-border-gradient;
+    border-radius: inherit;
+    opacity: 0.6;
+    mask:
+      conic-gradient(#000 0 0) content-box exclude,
+      conic-gradient(#000 0 0);
+  }
+}
+
+@mixin media-tablet() {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin media-mobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
